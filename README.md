@@ -1,20 +1,11 @@
-<h1>ReadMe Generator</h1>
-  
-  Contact:gwg1387@gmail.com
-  
-  <br>
-  
-  Associated Links
-  
-  GIT Pages Link: 
-  
-  GIT Repository Link: 
-  
+<h1>ReadMe Generator</h1> 
+    
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)  
   <br>
   
   ## <h2 id = "projectDescription"> Project Description </h2>
   
-  * This is an application that lets you generate a ReadMe based on the users inputs.
+  * Generates ReadMe Files
   <br>
   
   ## <h2 id = "tableOfContents"> Table of Contents: </h2>
@@ -30,16 +21,16 @@
   </ol>
   
   ## <h2 id = "installation">Installation </h2>
-    Install node.js to properly use
+    Install node.js
   ## <h2 id = "usage"> Usage </h2>
-    To create ReadMe files
-  ## <h2 id ="license"> License </h2>
-    MIT
-  ## <h2 id="contributing"> Contributing </h2>
     Please don't contribute
+  ## <h2 id ="license"> License </h2>
+    WTFPL
+  ## <h2 id="contributing"> Contributing </h2>
+    Input responses to generate your ReadMe
   ## <h2 id="tests"> Tests </h2>
-    Enter in answers to the prompt questions
+    Input 
   # <h2 id="questions">Questions</h2>
-    Link to my GitHub: https://github.com/ggrove87
-    Direct email: gwg1387@gmail.com
+    Link to my GitHub: ...
+    Direct email: ...
   

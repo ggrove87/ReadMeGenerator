@@ -1,7 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-let contactEmail = "gwg1387@gmail.com";
-
+let imageSource = "";
 
 inquirer
   .prompt([
@@ -17,7 +16,7 @@ inquirer
     },
     {
         type: 'input',
-        message: 'Please enter the instalation instructions.',
+        message: 'Please enter the installation instructions.',
         name: 'installation',
     }, 
     {
@@ -36,10 +35,10 @@ inquirer
         name: 'tests',
     },
     {
-      type: 'list',
-      choices: ["MIT", "GPL",  ],
-      message: 'What license did you use?',
-      name: 'license',
+        type: 'list',
+        choices: ["MIT", "GPL", "WTFPL" ],
+        message: 'What license did you use?',
+        name: 'license',
     },
     {
         type: 'input',
@@ -52,21 +51,13 @@ inquirer
         name: 'email',
     },
   ])
-  .then((response) =>
+  .then((response) =>{
+  determineIcon(response.license),
   fs.writeFile(
     "README.md",
-    `<h1>${response.title}</h1>
-  
-  Contact:${contactEmail}
-  
-  <br>
-  
-  Associated Links
-  
-  GIT Pages Link: 
-  
-  GIT Repository Link: 
-  
+    `<h1>${response.title}</h1> 
+    
+${imageSource}  
   <br>
   
   ## <h2 id = "projectDescription"> Project Description </h2>
@@ -102,8 +93,16 @@ inquirer
   `,
     (err) => (err ? console.error(err) : console.log("Read me successfully generated!"))
   )
-  );
+ } );
 
 
-
+function determineIcon(licenseType){
+    if(licenseType === "MIT"){
+        imageSource = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    } else if (licenseType === 'GPL') {
+        imageSource = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+    } else {
+        imageSource ="[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)"
+    }
+}
 
