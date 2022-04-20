@@ -46,6 +46,11 @@ inquirer
         message: "Please enter the link to your GitHub profile.",
         name: 'gitHub',
     },
+    {
+        type: 'input',
+        message: "Please enter the link to your GitHub profile.",
+        name: 'gitHub',
+    },
   ])
   .then((response) =>
   fs.writeFile(
