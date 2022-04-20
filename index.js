@@ -48,8 +48,8 @@ inquirer
     },
     {
         type: 'input',
-        message: "Please enter the link to your GitHub profile.",
-        name: 'gitHub',
+        message: "Please enter your preferred contact email.",
+        name: 'email',
     },
   ])
   .then((response) =>
