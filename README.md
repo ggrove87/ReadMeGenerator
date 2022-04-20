@@ -1,4 +1,4 @@
-Fun Project
+<h1>Fun Project Time</h1>
   
   Contact:gwg1387@gmail.com
   
@@ -14,7 +14,7 @@ Fun Project
   
   ## <h2 id = "projectDescription"> Project Description </h2>
   
-  * example text
+  * Fun
   <br>
   
   ## <h2 id = "tableOfContents"> Table of Contents: </h2>
@@ -30,7 +30,7 @@ Fun Project
   </ol>
   
   ## <h2 id = "installation">Installation </h2>
-
+    No
   ## <h2 id = "usage"> Usage </h2>
 
   ## <h2 id ="license"> License </h2>

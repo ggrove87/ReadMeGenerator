@@ -1,7 +1,5 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-let description = "example text";
-let projectName = "Fun Project";
 let contactEmail = "gwg1387@gmail.com";
 
 
@@ -9,8 +7,33 @@ inquirer
   .prompt([
     {
       type: 'input',
-      message: 'What is your name?',
-      name: 'name',
+      message: 'What is your project title?',
+      name: 'title',
+    },
+    {
+        type: 'input',
+        message: 'Please describe your project.',
+        name: 'description',
+    },
+    {
+        type: 'input',
+        message: 'Please enter the instalation instructions.',
+        name: 'installation',
+    }, 
+    {
+        type: 'input',
+        message: "What is this application used for?",
+        name: 'usage',
+    },
+    {
+        type: 'input',
+        message: "What are the rules for contributing to this application?",
+        name: 'contributing',
+    },
+    {
+        type: 'input',
+        message: "Please enter the testing instructions.",
+        name: 'tests',
     },
     {
       type: 'list',
@@ -20,14 +43,14 @@ inquirer
     },
     {
         type: 'input',
-        message: "What is you preferred method of communication?",
-        name: 'communicationMethod',
+        message: "Please enter the link to your GitHub profile.",
+        name: 'gitHub',
     },
   ])
   .then((response) =>
   fs.writeFile(
     "README.md",
-    `${projectName}
+    `<h1>${response.title}</h1>
   
   Contact:${contactEmail}
   
@@ -43,7 +66,7 @@ inquirer
   
   ## <h2 id = "projectDescription"> Project Description </h2>
   
-  * ${description}
+  * ${response.description}
   <br>
   
   ## <h2 id = "tableOfContents"> Table of Contents: </h2>
@@ -59,16 +82,18 @@ inquirer
   </ol>
   
   ## <h2 id = "installation">Installation </h2>
-
+    ${response.installation}
   ## <h2 id = "usage"> Usage </h2>
-
+    ${response.usage}
   ## <h2 id ="license"> License </h2>
-
+    ${response.license}
   ## <h2 id="contributing"> Contributing </h2>
-
+    ${response.contributing}
   ## <h2 id="tests"> Tests </h2>
-
+    ${response.tests}
   # <h2 id="questions">Questions</h2>
+    Link to my GitHub: ${response.gitHub}
+    Direct email: ${response.email}
   `,
     (err) => (err ? console.error(err) : console.log("Read me successfully generated!"))
   )
