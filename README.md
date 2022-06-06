@@ -1,11 +1,11 @@
-<h1>ReadMe Generator</h1> 
+<h1>React Portfolio</h1> 
     
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
   <br>
   
   ## <h2 id = "projectDescription"> Project Description </h2>
   
-  * Generates ReadMe Files
+  * A professional portfolio created using react.
   <br>
   
   ## <h2 id = "tableOfContents"> Table of Contents: </h2>
@@ -21,16 +21,16 @@
   </ol>
   
   ## <h2 id = "installation">Installation </h2>
-    Install node.js
+    N/A
   ## <h2 id = "usage"> Usage </h2>
-    Please don't contribute
+    To show potential employeers my skill set.
   ## <h2 id ="license"> License </h2>
-    WTFPL
+    MIT
   ## <h2 id="contributing"> Contributing </h2>
-    Input responses to generate your ReadMe
+    Please do not contribute.
   ## <h2 id="tests"> Tests </h2>
-    Input 
+    N/A
   # <h2 id="questions">Questions</h2>
-    Link to my GitHub: ...
-    Direct email: ...
+    Link to my GitHub: https://github.com/ggrove87
+    Direct email: gwg1387@gmail.com
   
