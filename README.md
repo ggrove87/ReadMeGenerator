@@ -1,36 +1,36 @@
-<h1>ReadMe Generator</h1> 
+<h1>Expense Tracker</h1> 
     
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
   <br>
   
   ## <h2 id = "projectDescription"> Project Description </h2>
   
-  * Generates ReadMe Files
+  * An application used to track expenses related to projects/tasks.
   <br>
   
   ## <h2 id = "tableOfContents"> Table of Contents: </h2>
   <ol>
-  * <a href="#projectDescription">Description</a>
-  * <a href="#tableOfContents">Table of Contents</a>
-  * <a href="#installation">Installation</a>
-  * <a href="#usage">Usage</a>
-  * <a href="#license">License</a>
-  * <a href="#contributing">Contributing</a>
-  * <a href="#tests">Tests</a>
-  * <a href="#questions">Questions</a>
+  <a href="#projectDescription">Description</a>
+  <a href="#tableOfContents">Table of Contents</a>
+  <a href="#installation">Installation</a>
+  <a href="#usage">Usage</a>
+  <a href="#license">License</a>
+  <a href="#contributing">Contributing</a>
+  <a href="#tests">Tests</a>
+  <a href="#contact">Contact</a>
   </ol>
   
   ## <h2 id = "installation">Installation </h2>
-    Install node.js
+    npm install
   ## <h2 id = "usage"> Usage </h2>
-    Please don't contribute
+    Used to to track the costs with individual projects be better track expenses.
   ## <h2 id ="license"> License </h2>
-    WTFPL
+    MIT
   ## <h2 id="contributing"> Contributing </h2>
-    Input responses to generate your ReadMe
+    Request contributer status
   ## <h2 id="tests"> Tests </h2>
-    Input 
-  # <h2 id="questions">Questions</h2>
-    Link to my GitHub: ...
-    Direct email: ...
+    N/A
+  # <h2 id="contact">Contact</h2>
+    Link to my GitHub: ggrove87
+    Direct email: gwg1387@gmail.com
   
